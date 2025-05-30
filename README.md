@@ -34,8 +34,16 @@ The performance of models with and without SMOTENC will be compared to assess th
 
 ![image](https://github.com/user-attachments/assets/77353f28-a26d-4038-9bcb-f96d8f6a16bc)
 
+Interpretation: 
+The Random Forest model (NON SMOTE) performed the best as it achieved the highest recall score and did not exhibit significant overfitting. This indicates that the model is able to generalize well across both the training and testing datasets. This is further supported by the ROC-AUC results, where the closer the ROC-AUC values are between the training and testing sets, the more stable and less overfitted the model tends to be.
+
 ![image](https://github.com/user-attachments/assets/f804c528-c0c8-4e98-bb82-abafcd5233e9)
 
 ![image](https://github.com/user-attachments/assets/3fa98324-ecb5-42aa-a9b4-51741368869f)
+
+Interpretation: 
+The Random Forest model (SMOTE) performed the best as it achieved the highest recall score and did not exhibit significant overfitting. This indicates that the model is able to generalize well across both the training and testing datasets. This is further supported by the ROC-AUC results, where the closer the ROC-AUC values are between the training and testing sets, the more stable and less overfitted the model tends to be.
+
+Therefore, the chosen model between Random Forest with SMOTE and without SMOTE is the Random Forest without SMOTE. This is because it has a relatively low overfitting gap—around 4%, which indicates better generalization—compared to the SMOTE version. In addition, the recall score on the testing set is also considerably high, making it a more reliable option for prediction.
 
 
