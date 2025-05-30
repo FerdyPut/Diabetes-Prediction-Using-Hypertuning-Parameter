@@ -47,3 +47,7 @@ The Random Forest model (SMOTE) performed the best as it achieved the highest re
 Therefore, the chosen model between Random Forest with SMOTE and without SMOTE is the Random Forest without SMOTE. This is because it has a relatively low overfitting gap—around 4%, which indicates better generalization—compared to the SMOTE version. In addition, the recall score on the testing set is also considerably high, making it a more reliable option for prediction.
 
 
+                                                                               -THANK YOU-
+FOLLOW MORE:
+Linkedln: linkedin.com/in/ferdypput
+
