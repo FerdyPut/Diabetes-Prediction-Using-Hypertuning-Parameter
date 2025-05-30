@@ -50,5 +50,5 @@ Therefore, the chosen model between Random Forest with SMOTE and without SMOTE i
                                                                       -THANK YOU-
 FOLLOW MORE:
 
-Linkedln: linkedin.com/in/ferdypput
+🔗 Connect with me: [LinkedIn](https://linkedin.com/in/ferdypput)
 
