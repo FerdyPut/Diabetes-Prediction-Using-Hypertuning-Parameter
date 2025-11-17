@@ -6,6 +6,8 @@ from io import BytesIO
 import ml
 import os
 from datetime import datetime
+from zoneinfo import ZoneInfo
+import pytz
 
 # Fungsi untuk mengunduh dan memuat pickle dari Dropbox
 def load_pickle_from_dropbox(url):
@@ -374,8 +376,10 @@ def prediksi():
                 hasil_text = "Terdeteksi Diabetes" if st.session_state.get("hasil_prediksi",0)==1 else "Tidak Terdeteksi Diabetes"
                 prob_yes = st.session_state.get("prob_yes", None)
                 prob_percent = round(prob_yes*100,2) if prob_yes is not None else None
+                # WIB (UTC+7)
+                wib = pytz.timezone('Asia/Jakarta')
                 data = {
-                    "Timestamp": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+                    "Timestamp": datetime.now(ZoneInfo("Asia/Jakarta")).strftime("%Y-%m-%d %H:%M:%S"),
                     "Nama" : Nama,
                     "Alamat" : Alamat,
                     "Provinsi" : Provinsi,
